@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.container {
+    height: 415px;
+    width: 738px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card1 {
+    width: 150px;
+    height: 200px;
+    position: relative;
+}
+
+
+
+.card1_text {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card1_img {
+    width: 150px;
+    height: 200px;
+}
+
+
+.card1_p {
+    font-size: 10px;
+    width: 100px;
+    height: 80px;
+    color: white;
+}
+
+.card1_button {
+    width: 80px;
+    height: 25px;
+    font-size: 10px;
+    color: white;
+    background-color: black;
+}
+
+.card1_p_button {
+    gap: 10px;
+    display: none;
+}
+
+
+.card1_texts {
+    width: 150px;
+    height: 200px;
+    transition: 1s;
+    transform: translateY(100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.card1_text {
+    transition: 1s;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: center;
+}
+
+.card1:hover .card1_p_button {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+
+.card1:hover .card1_texts,
+.card1:hover .card1_text {
+    transform: translateY(0);
+
+}
